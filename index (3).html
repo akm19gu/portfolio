@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>中村裕 | ポートフォリオ</title>
+  <meta name="description" content="コミュニティづくり／場の運営・編集・音楽制作を軸にしたポートフォリオ。" />
+  <meta name="color-scheme" content="light dark" />
+  <!-- 共有用（必要に応じて差し替え） -->
+  <meta property="og:title" content="中村裕 | ポートフォリオ" />
+  <meta property="og:description" content="コミュニティづくり／場の運営・編集・音楽制作を軸にしたポートフォリオ。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://＜あなたのGitHubユーザー名＞.github.io/＜リポジトリ名＞/" />
+  <meta property="og:image" content="https://placehold.co/1200x630/png?text=Portfolio" />
+  <style>
+    :root{
+      --bg:#f7f7f8; --fg:#1f2328; --muted:#6b7280; --card:#ffffff; --link:#2563eb;
+      --accent:#0ea5e9; --border:#e5e7eb; --radius:16px; --shadow:0 4px 20px rgba(0,0,0,.06);
+    }
+    @media(prefers-color-scheme:dark){
+      :root{ --bg:#0b0d10; --fg:#e5e7eb; --muted:#9aa4b2; --card:#101418; --link:#93c5fd; --accent:#38bdf8; --border:#1f2937; }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font:16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; color:var(--fg); background:var(--bg)}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px); background:color-mix(in oklab, var(--bg) 80%, transparent); border-bottom:1px solid var(--border); z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav a.logo{font-weight:700;letter-spacing:.5px}
+    .nav .links{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:999px;border:1px solid var(--border);background:linear-gradient(180deg, color-mix(in oklab, var(--card) 88%, transparent), var(--card));box-shadow:var(--shadow)}
+    .btn.primary{border-color:transparent;background:linear-gradient(180deg, var(--accent), color-mix(in oklab, var(--accent) 70%, transparent)); color:white}
+    .grid{display:grid;gap:16px}
+    .hero{padding:48px 0}
+    .hero h1{font-size:clamp(28px,5vw,40px);line-height:1.2;margin:0 0 10px}
+    .kicker{color:var(--muted);font-size:14px;text-transform:uppercase;letter-spacing:.12em}
+    .lead{font-size:18px;color:var(--muted)}
+    section{padding:26px 0}
+    h2{font-size:22px;margin:0 0 12px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    ul{margin:8px 0 0 20px}
+    li{margin:6px 0}
+    .projects{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    .project h3{margin:0 0 6px;font-size:18px}
+    .meta{color:var(--muted);font-size:13px}
+    footer{border-top:1px solid var(--border);color:var(--muted);font-size:14px;padding:24px 0;margin-top:20px}
+    .split{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    @media(max-width:860px){.split{grid-template-columns:1fr}}
+    code.inline{background:color-mix(in oklab, var(--card) 85%, transparent); padding:2px 6px; border-radius:6px; border:1px solid var(--border); font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:85%}
+    .badge{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="#top">中村裕</a>
+      <nav class="links">
+        <a href="#about">概要</a>
+        <a href="#skills">スキル</a>
+        <a href="#projects">プロジェクト</a>
+        <a href="#media">音源</a>
+        <a href="#contact">連絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid" style="grid-template-columns:1.2fr .8fr; align-items:center; gap:20px">
+        <div>
+          <div class="kicker">Portfolio / Community × Music × Editing</div>
+          <h1>中村裕</h1>
+          <p class="lead">コミュニティ運営・イベント設計に関心。人と人との有機的なつながりを大事にします。</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+            <a class="btn primary" href="＜履歴書PDFのURL＞" target="_blank" rel="noopener">職務経歴書（PDF）</a>
+            <a class="btn" href="#contact">連絡する</a>
+            <span class="badge" id="lastUpdated">Last updated — </span>
+          </div>
+        </div>
+        <div class="card">
+          <h2 style="margin:0 0 8px">3つの軸</h2>
+          <ul>
+            <li>人が安心して語り、つながる「場」をつくる</li>
+            <li>等身大の言葉で編集し、伝わる導線を設計する</li>
+            <li>文化（音楽・アート）と日常を橋渡しする</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="split">
+      <div class="card">
+        <h2>概要</h2>
+        <p>現職ではITコンサル会社で採用・人事支援などに従事。2025年はコミュニティづくり／場の運営・編集を主軸に転職活動中。コミュニティ運営に興味があります。</p>
+        <ul>
+          <li>Oxford Brookes University に交換留学（政治学・社会学）／IELTS 6.5</li>
+          <li>ジャズドラム・作編曲。2025/08/22 MV公開予定</li>
+        </ul>
+      </div>
+      <aside class="card">
+        <h2>ハイライト</h2>
+        <ul>
+          <li>Coffee House Project：大学でワークショップ実施（2025/07/03）</li>
+          <li>夕焼けクイズアプリ：React + GitHub Pages（社内交流用）</li>
+          <li>人事制度・資料の要点編集／共有</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>スキル</h2>
+      <div class="grid projects">
+        <div class="card">
+          <h3>コミュニティ運営・イベント設計</h3>
+          <p class="meta">問いづくり／進行／記録・ナレッジ化／収益設計の試作</p>
+        </div>
+        <div class="card">
+          <h3>編集・広報</h3>
+          <p class="meta">スライド・記事の要点整理／言語化／導線設計</p>
+        </div>
+        <div class="card">
+          <h3>RPA（ちょっと）</h3>
+          <p class="meta">Power Automate Desktop</p>
+        </div>
+        <div class="card">
+          <h3>音楽・音響</h3>
+          <p class="meta">作編曲（ジャズ／インスト／Vocaloid）／演奏（Dr）</p>
+        </div>
+        <div class="card">
+          <h3>言語</h3>
+          <p class="meta">日本語（母語）／英語（IELTS 6.5）</p>
+        </div>
+        <div class="card">
+          <h3>ツール</h3>
+          <p class="meta">Html, React, Cubase/SynthV, Office等</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>プロジェクト</h2>
+      <div class="grid projects">
+        <article class="card project">
+          <h3>Coffee House Project（大学WS）</h3>
+          <p>対話の場づくり。問いの設計→当日運営までを一貫して実施。</p>
+          <p class="meta">役割：企画／設計／進行（2025/07）</p>
+          <p><a href="＜レポートや写真のURL＞" target="_blank" rel="noopener">全体レポートを見る</a></p>
+          <p style="margin:10px 0 6px"><strong>関連記事</strong></p>
+          <ul>
+            <li><a href="https://note.com/suzukikatsuhiko/n/na85fa8c82e7c" target="_blank" rel="noopener">「対立」ではなく「対話」を　＜コーヒーハウスPJ＞のこれから　木曜2限⑧（2024年6月13日）</a></li>
+            <li><a href="https://note.com/suzukikatsuhiko/n/n9d3c4bb014a2" target="_blank" rel="noopener">お題は「メリトクラシー」コーヒーを淹れ、お菓子食べながら議論　木曜2限⑦（2024年11月19日）</a></li>
+            <li><a href="https://note.com/suzukikatsuhiko/n/n5c869d21b056" target="_blank" rel="noopener">お菓子とコーヒーを囲んでゆっくり話すのはとても新鮮で落ち着く　木曜2限⑫（2025年7月10日）</a></li>
+          </ul>
+        </article>
+        <article class="card project">
+          <h3>夕焼けクイズ（社内交流アプリ）</h3>
+          <p>オフィスから撮影した夕景写真を題材に、夏至からの撮影日を当てるクイズ。ChatGPTをフル活用して作成。</p>
+          <p class="meta">役割：企画／UI／実装（React）</p>
+          <p><a href="＜デモURL＞" target="_blank" rel="noopener">デモを見る</a> ・ <a href="＜GitHubリポジトリURL＞" target="_blank" rel="noopener">GitHub</a></p>
+        </article>
+        <article class="card project">
+          <h3>MV「地獄の沙汰もガチ金次第」</h3>
+          <p>ボカコレ向けに制作中のインスト／Vocaloid楽曲。公開：2025/08/22 予定。</p>
+          <p class="meta">役割：作編曲／プロデュース</p>
+          <p><a href="＜YouTubeまたはXの告知URL＞" target="_blank" rel="noopener">続報</a></p>
+        </article>
+        <article class="card project">
+          <h3>社内共有資料の作成</h3>
+          <p>用語定義・構造化・要点の見せ方を整理。</p>
+          <p class="meta">役割：要点設計／編集</p>
+          <p><a href="＜サンプルPDFのURL＞" target="_blank" rel="noopener">サンプル</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MEDIA -->
+    <section id="media">
+      <h2>音源・リンク</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://soundcloud.com/nakam-605680943" target="_blank" rel="noopener">SoundCloud</a></li>
+          <li><a href="https://www.youtube.com/@akm19gu" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://lit.link/Akm19gu" target="_blank" rel="noopener">アーティストプロフィール</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="split">
+      <div class="card">
+        <h2>連絡</h2>
+        <p>ご関心ありがとうございます。面談のご相談はメールまたはSNSのDMからお願いします。</p>
+        <ul>
+          <li>メール：<a href="mailto:akm7339gil@gmail.com">＜メールアドレス＞</a></li>
+          <li>SNS：<a href="https://lit.link/Akm19gu" target="_blank" rel="noopener">＜SNSリンク＞</a></li>
+          <li>大分県大分市出身、現在東京都新宿区在住。</li>
+        </ul>
+      </div>
+      <aside class="card">
+        <h2>ダウンロード</h2>
+        <ul>
+          <li><a href="＜履歴書PDFのURL＞" target="_blank" rel="noopener">職務経歴書（PDF）</a></li>
+          <li><a href="＜ポートフォリオPDFのURL＞" target="_blank" rel="noopener">ポートフォリオ（PDF）</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <div>© <span id="y"></span> 中村裕</div>
+        <div>このサイトは <code class="inline">GitHub Pages</code> で公開しています。</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 表示の細かな演出（編集不要）
+    const y = document.getElementById('y');
+    if(y) y.textContent = new Date().getFullYear();
+    const lu = document.getElementById('lastUpdated');
+    if(lu){
+      const d = new Date(document.lastModified);
+      const fmt = d.toLocaleString('ja-JP', { year:'numeric', month:'2-digit', day:'2-digit' });
+      lu.textContent = `Last updated — ${fmt}`;
+    }
+  </script>
+
+  <!-- 編集メモ：
+    1) 角括弧のプレースホルダ「＜…＞」を自分の情報に置き換えるだけでOK。
+    2) GitHub Pages 公開手順：
+       - 新規リポジトリを作成（例：portfolio）。
+       - ルートにこの index.html を置き、コミット。
+       - Settings → Pages → Source を「Deploy from a branch」/ Branch: main (/root) に設定。
+       - 数分待って公開URLにアクセス。
+    3) 画像を置きたい場合：同じリポジトリに /img を作り、<img src="./img/yourphoto.jpg" alt="" /> を挿入。
+    4) もっと凝ったデザイン（ダークモード切替、英語版など）も追加可能。必要なら相談してね。
+  -->
+</body>
+</html>
